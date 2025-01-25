@@ -8,20 +8,25 @@ body {
 }
 /*header styles */
 .container {
-  max-width: 162vw;
-  min-width:162vw;
+
   background-color: white;
 }
 .main-nav {
-  width :130vw;
-  margin-left:3rem;
+ display:flex;
+ align-items: center;
+ justify-content: center;
+ gap: 15rem;
+ padding: 2rem 0;
+
   
 }
-.main-nav ,.nav {
-  display: flex;
-  padding-top: 2rem;
+.main-nav img {
+  height:7rem;
+  width:18rem;
+  object-fit: cover;
   
 }
+
 .nav li {
   font-size: 1.7rem;
   list-style-type: none;
@@ -29,14 +34,15 @@ body {
  
 }
 .nav {
-  margin-top: 5rem;
+  display: flex;
+  padding-top: 1rem;
 }
 .nav a  {
   color:black;
   text-decoration: none;
 }
 .logo {
-  width:50vw;
+  
 }
 #submenu {
   display: none;
@@ -55,14 +61,14 @@ body {
   src: url(fonts/fonts.woff2)
 }
 .left-content {
-  height: 65vh;
-  width: 50vw;
+  height: 85vh;
+  width: 30vw;
   background-color:#5C4033;
   border:5px solid #5C4033;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
 }
 .col {
-  width: 150vw;
+  
   display:flex;
 }
 .inner-content  {
@@ -85,6 +91,7 @@ font-weight:bold;
 
   padding :2rem;
   color:#5C4033;
+  font-size:1.5rem;
   background-color: white;
   text-decoration: none;
 }
@@ -93,7 +100,8 @@ font-weight:bold;
 }
 .img-fill img {
   
-  width:96vw;
+  width:70vw;
+  height:85vh;
 
 }
  
@@ -110,28 +118,30 @@ font-weight:bold;
   margin-bottom: 1rem;
 }
 .tm-welcome-description {
-  width: 80vw;
-  font-size:0.9rem;
+  width: 38vw;
+  font-size:1rem;
   margin-bottom:2rem;
 }
 .section {
   display: flex;
-  margin-left:4rem;
-  margin-bottom: 10rem;
+  padding: 2rem 5rem;
   
 }
 .img-circle  {
   margin-top:5rem;
-  width: 45vw;
+  width: 35vw;
+  height:40vh;
+  object-fit: cover;
   border:2px solid white;
   border-radius:45%;
 }
 .gold-text {
  
-  font-size:4rem;
+  font-size:3rem;
   width: 50vw;
   color:#c79c60;
   font-family: 'mySecondFont',cursive;
+  text-wrap:nowrap;
 }
 .more-button {
   text-transform: uppercase;
@@ -147,21 +157,29 @@ font-weight:bold;
 }
 .tm-hr-container {
   height: 2rem;
-  width:60vw;
+  min-width:50vw;
+  max-width:55vw;
   margin-top: 4.7rem;
-  
+  gap: 4rem;
 }
 .tm-div {
   display:flex;
-  margin-left:14rem;
-  width: 150vw;
-  margin-bottom:5rem;
+  padding:2rem 8rem ;
+  width: 90vw;
+  gap:4rem;
+  margin-left: 7rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  
 }
 .tm-section2 .tm-div {
   display:flex;
-  margin-left:6rem;
-  width: 150vw;
-  margin-bottom:5rem;
+  padding:2rem 8rem ;
+  width: 90vw;
+  gap:4rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .description {
   
@@ -169,7 +187,7 @@ font-weight:bold;
   flex-direction: column;
   align-items: center;
   margin-top: -10px;
-  width: 50vw;
+  width: 35vw;
   background-color: white;
 }
 .description h3 span {
@@ -183,7 +201,7 @@ font-weight:bold;
 }
 .description hr {
   
-  width: 40vw;
+  width: 30vw;
   margin-bottom:3rem;
 }
 .description p {
@@ -226,16 +244,16 @@ color:rgb(174,174,174);
   
 }
 .tm-item img {
-  width: 50vw;
+  width: 35vw;
 }
 .tm-div2 {
   display :flex;
-  width: 140vw;
+
   margin-bottom: 10rem;
 }
 .tm-section {
-  
-  margin-bottom: 20rem;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
 }
 body {
   background-color:#E5E4E2;
@@ -243,17 +261,17 @@ body {
 .tm-special {
   background-image: url('img/special-img2.jpg') ;
   background-repeat:no-repeat ;
-  background-size:contain;
- width: 100vw;
- height: 54vh;
+  background-size:cover;
+ width: 50rem;
+ height: 45rem;
  border: 10px solid white;
  margin-left:2rem;
  margin-bottom: 3rem;
 }
  .tm-special a {
   color:white;
-  position: relative;
-  top: 53rem;
+ position:relative;
+ top:34rem;
   
   text-decoration: none;
   
@@ -267,9 +285,10 @@ body {
  
 }
 .tm-special a div p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-left:2rem;
   margin-bottom:-6rem;
+  text-wrap:nowrap;
   
 }
 .tm-special a div {
@@ -283,8 +302,8 @@ body {
 background-image: url('img/ginger.jpg') ;
   background-repeat:no-repeat ;
   background-size:contain;
- width: 69vw;
- height: 24vh;
+ width: 40rem;
+ height: 26rem;
  border: 10px solid white;
  margin-left:2rem;
  margin-bottom: 3rem;
@@ -292,7 +311,7 @@ background-image: url('img/ginger.jpg') ;
  .tm-special2 a {
   color:white;
   position: relative;
-  top: 16rem;
+  top: 15rem;
   
   text-decoration: none;
   
@@ -301,29 +320,29 @@ background-image: url('img/ginger.jpg') ;
 .tm-special2 a div h3 {
   font-size: 3rem;
   
-  margin-bottom:1.2rem;
-  margin-left: 2rem;
+  margin-bottom:0.6rem;
+  margin-left: 1.8rem;
  
 }
 .tm-special2 a div p {
-  font-size: 1.8rem;
-  margin-left:2rem;
+  font-size: 1.3rem;
+  margin-left:1.8rem;
   margin-bottom:-6rem;
   
 }
 .tm-special2 a div {
   
-  height: 12rem;
-  padding :2rem;
+  height: 10rem;
+  padding :2rem 1rem;
   background-color: rgb(0,0,0,0.6)
   
 }
 .tm-special3 {
 background-image: url('img/lime.jpg') ;
   background-repeat:no-repeat ;
-  background-size:contain;
- width: 27vw;
- height: 14vh;
+  background-size:cover;
+ width: 19rem;
+ height: 16.5rem;
  border: 10px solid white;
  margin-left:2rem;
  margin-right: 2rem;
@@ -355,9 +374,9 @@ background-image: url('img/lime.jpg') ;
 .tm-special4 {
 background-image: url('img/mint.jpg') ;
   background-repeat:no-repeat ;
-  background-size:contain;
- width: 27vw;
- height: 14vh;
+  background-size:cover;
+ width: 19rem;
+ height: 16.5rem;
  border: 10px solid white;
  margin-left:2rem;
 }
@@ -397,7 +416,7 @@ background-image: url('img/mint.jpg') ;
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
-  width: 150vw;
+  width: 100vw;
  
 }
 .container2 {
@@ -405,41 +424,38 @@ background-image: url('img/mint.jpg') ;
 }
 .section-heading {
   color:white;
-  padding: 10rem;
+  padding:10rem 6rem;
   font-size:2rem;
-  width: 120vw;
+  
 }
 .section-heading h6 hr{
   display: inline-block;
   width: 8vw;
-  position: relative;
-  top:-0.6rem;
-  margin-right: 0.6rem;
+
+  margin-right: 0.9rem;
 }
-.section-heading h6{
+.section-heading h6 {
   font-size:2rem;
   margin-bottom:1rem ;
 }
 .section-heading p {
-  font-size: 1.7vw;
-  max-width: 100vw;
-  min-width: 98vw;
+  font-size: 1.7rem;
+  
 }
 .section-heading h2 {
   margin-bottom: 2rem;
-  font-size: 1rem;
-  max-width: 80vw;
- min-width: 78vw;
+  font-size: 3rem;
+ 
 }
 .phone {
-  position:relative ;
   
-  left: 10rem;
-  height: 13vh;
-  width: 110vw;
+  height: 15rem;
+  width: 80vw;
   background-color: white;
  text-align: center;
   margin-bottom: 3rem;
+ position: relative;
+ left:7rem;
  
 }
 .phone h4 {
@@ -469,14 +485,13 @@ background-image: url('img/mint.jpg') ;
 }
   
 .message {
-  position:relative ;
-  
-  left: 10rem;
-  height: 13vh;
-  width: 110vw;
+  height: 15rem;
+  width: 80vw;
   background-color: white;
  text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+ position: relative;
+ left:7rem;
 }
 .message h4 {
   color: black;
@@ -505,10 +520,10 @@ background-image: url('img/mint.jpg') ;
 }
 .row2 {
   position: relative;
-  left: 10rem;
+  left: 7rem;
   background-color: white;
    color: black;
-   width: 110vw;
+   width: 80vw;
    padding: 5rem;
 }
 .col1 {
@@ -634,18 +649,19 @@ background-image: url('img/mint.jpg') ;
 }
 .container3 {
   background-color: #5C4033;
-  height: 20vh;
-  width: 150vw;
+  height: 15rem;
+  width: 100vw;
+  padding :4rem 0;
 }
 .right ul li {
   background-color: white;
-  height: 5vh;
-  width: 10vw;
+  height: 5rem;
+  width: 5rem;
   border:2px solid white;
   border-radius:50%;
   text-align: center;
   position: relative;
-  margin-top: 4rem;
+  
   margin-left:1.5rem;
 }
 .right ul {
